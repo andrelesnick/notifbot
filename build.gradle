@@ -1,0 +1,31 @@
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '5.2.0'
+    id 'edu.sc.seis.launch4j' version '2.4.6'
+}
+
+group 'ander'
+version '1.0-SNAPSHOT'
+mainClassName = 'notif.bot.Main'
+
+def jdaVersion = '4.2.0_204'
+launch4j {
+    mainClassName = 'notif.bot.Main'
+    icon = "${projectDir}/myApp.ico"
+}
+sourceCompatibility = targetCompatibility = 1.8
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'net.dv8tion:JDA:4.2.0_204'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    //compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    compile 'org.jsoup:jsoup:1.13.1'
+    implementation 'edu.sc.seis.gradle:launch4j:2.4.6'
+
+
+}
