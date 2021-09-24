@@ -1,9 +1,0 @@
-#Insert your bot's authentication token below https://i.imgur.com/DoJn80b.png
-token=NzgyMDI4MDI4MzY0MzI0OTA0.X8GOWw.jSJaDgcTfKWyCjg0vs-iZdh81-g
-#this is the prefix for your commands
-pref=.
-#cooldown for new conversations (minutes)
-cooldown=30
-channel,user=753037241407766548,111432237886533632
-channel,user=698390032515596378,111432237886533632
-channel,user=630911448788500484,111432237886533632
